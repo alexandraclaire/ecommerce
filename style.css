@@ -1,0 +1,45 @@
+/*
+ Theme Name:   childtheme
+ Theme URI:    
+ Description:  Luna Child Theme
+ Author:       Alex Carter
+ Author URI:   
+ Template:     luna
+ Version:      1.0.0
+
+*/
+
+@import url('../luna/style.css');
+
+/*Hero image*/
+
+#home-hero {
+	padding-top:8em;
+	padding-bottom:15em;
+}
+
+/*Home Page*/
+.site-title {
+	font-family:helvetica;
+	padding-top:0.8em;
+}
+#home-works {
+	padding:0;
+}
+
+/* Pages */
+.page-title {
+	text-align:center;
+	padding-top:2em;
+	padding-bottom:1em;
+}
+
+/* Media Queries */
+
+@media screen and (min-width:650px) {
+	#home-hero {
+		padding-top:10em;
+	}
+}
+
+
