@@ -24,11 +24,6 @@ get_header(); ?>
     
     	<?php endif; ?>
     
-    		<div class="grid grid-pad">
-        		<div class="col-1-1">
-					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-            	</div>
-        	</div>
         	<div class="entry-overlay"></div>
         
     	<?php if ( has_post_thumbnail( $post->ID ) ): ?>    

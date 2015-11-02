@@ -28,11 +28,6 @@ get_header(); ?>
     
     <?php endif; ?>
     
-    	<div class="grid grid-pad">
-        	<div class="col-1-1">
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-            </div>
-        </div>
         <div class="entry-overlay"></div>
 	
     <?php if ( has_post_thumbnail( $post->ID ) ): ?>    
@@ -48,8 +43,6 @@ get_header(); ?>
     
  
 <div class="entry-content-wrapper"> 
-	<div class="grid grid-pad page-contain">
-    	<div class="col-9-12">    
             <div id="primary" class="content-area shortcodes">
                 <main id="main" class="site-main" role="main">
         
@@ -67,8 +60,6 @@ get_header(); ?>
                 </main><!-- #main -->
             </div><!-- #primary -->
 		</div>
-	<?php get_sidebar(); ?>
-	</div>
-</div>
+
 </section>
 <?php get_footer(); ?>

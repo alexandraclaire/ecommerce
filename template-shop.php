@@ -20,18 +20,11 @@ get_header(); ?>
     		<header class="page-entry-header">
     
     	<?php endif; ?> 
-    
-    	<div class="grid grid-pad">
-        	<div class="col-1-1">
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-            </div>
-        </div>
+
         <div class="entry-overlay"></div>
 	</header><!-- .entry-header -->
  
-<div class="entry-content-wrapper"> 
-	<div class="grid grid-pad page-full-contain">
-    	<div class="col-1-1">    
+<div class="entry-content-wrapper">     
             <div id="primary" class="content-area shortcodes">
                 <main id="main" class="site-main" role="main">
         
@@ -49,7 +42,5 @@ get_header(); ?>
                 </main><!-- #main -->
             </div><!-- #primary -->
 		</div>
-	</div>
-</div>
 </section>
 <?php get_footer(); ?>

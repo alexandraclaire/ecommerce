@@ -25,10 +25,9 @@
 			
              <?php if ( get_theme_mod( 'luna_logo' ) ) : ?>
               
-    			<div class="site-logo site-title"> 
+    			<div class="site-title"> 
        				<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'>
                     
-                    <img src='<?php echo esc_url( get_theme_mod( 'luna_logo' ) ); ?>' <?php if ( get_theme_mod( 'logo_size' ) ) : ?>width="<?php echo esc_attr( get_theme_mod( 'logo_size', '150' )); ?>"<?php endif; ?> alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
                     
                     </a> 
     			</div><!-- site-logo -->

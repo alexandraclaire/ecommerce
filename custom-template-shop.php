@@ -29,27 +29,14 @@ get_header(); ?>
         <div class="entry-overlay"></div>
 	</header><!-- .entry-header -->
  
-<div class="entry-content-wrapper"> 
-	<div class="grid grid-pad page-full-contain">
-    	<div class="col-1-1">    
+        <div class="entry-content-wrapper">   
             <div id="primary" class="content-area shortcodes">
                 <main id="main" class="site-main" role="main">
         
                         <?php get_template_part( 'content'); ?>
         
-                        <?php
-                            // If comments are open or we have at least one comment, load up the comment template
-                            if ( comments_open() || get_comments_number() ) :
-                                comments_template();
-                            endif;
-                        ?>
-        
-                    <?php endwhile; // end of the loop. ?>
-        
                 </main><!-- #main -->
             </div><!-- #primary -->
 		</div>
-	</div>
-</div>
 </section>
 <?php get_footer(); ?>

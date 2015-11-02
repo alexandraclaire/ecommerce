@@ -13,8 +13,7 @@ get_header(); ?>
     <?php else: ?>
     	<section id="home-hero">
     <?php endif; ?>
-	
-    		<div class="grid grid-pad">
+
     			<div class="col-1-1">
         	
             		<?php if ( get_theme_mod( 'luna_home_title' ) ) : ?>
@@ -41,7 +40,7 @@ get_header(); ?>
                     
         	
             	</div>
-    		</div>
+
     
 	<?php if ( get_theme_mod( 'luna_home_bg_image' ) ) : ?>
 		</section>
@@ -53,26 +52,22 @@ get_header(); ?>
 
 	<section id="home-works">
 		
-        <div class="grid grid-pad">
     		<div class="col-1-1">
             	<?php if ( get_theme_mod( 'luna_home_projects_text' ) ) : ?>
         			<h3><?php echo wp_kses_post( get_theme_mod( 'luna_home_projects_text', esc_html__( 'Recently Added', 'luna' ) )); ?></h3>
             	<?php endif; ?>
         	</div>
-    	</div>
         
             
         <?php if ( get_theme_mod( 'active_default_home_widget' ) == '' ) : ?> 
         	<?php if ( is_active_sidebar('default-home-widget-area') ) : ?>
         
         		<div class="home-widget home-widget-default shortcodes">
-                	<div class="grid grid-pad">
                 		<div class="col-1-1"> 
                 
                     		<?php dynamic_sidebar('default-home-widget-area'); ?>
                             
                         </div><!-- .col -->
-                    </div><!-- .grid -->
                 </div><!-- .home-widget -->
                 
             <?php endif; ?>
