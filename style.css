@@ -21,9 +21,11 @@
 /*BASIC LAYOUT*/
 .site-title {
 	font-family:helvetica;
-	margin-top:1em;
 	font-size:60px;
 	color:white;
+}
+.site-header {
+	margin-top:1em;
 }
 .site-title a:hover {
 	color:grey;
@@ -40,10 +42,11 @@
 .site-info {
 	background:#fff;
 }
+.site-branding {
+	margin-left:0;
+}
 #colophon {
 	background:white;
-	margin:0;
-	width:100vw;
 }
 /* PAGES */
 
@@ -68,17 +71,8 @@ p, h2, .woocommerce .col2-set, .woocommerce-page .col2-set {
 	width:90%;
 	max-width:1200px;
 }
-#search-2 {
-	margin:0 auto;
-	width:88%;
-	max-width:1200px;
-	margin-bottom:2em;
-}
 #content ul {
-	margin:2em;
-}
-#content .woocommerce-result-count {
-	margin-left:3%;
+	margin-top:2em;
 }
 #content ul li .add_to_cart_button {
 	background:none;
@@ -106,19 +100,9 @@ p, h2, .woocommerce .col2-set, .woocommerce-page .col2-set {
 	max-width:1200px;
 }
 /*BUTTONS and FORMS*/
-#content form {
-	margin-top:2em;
-	padding-right:3%;
-}
 #comments {
 	padding-top:1em;
 	border:none;
-}
-#content .gridlist-toggle {
-	padding-left:1.5em !important;
-}
-#content ul.products.list li.product .gridlist-buttonwrap {
-	margin-top:2em;
 }
 .woocommerce .woocommerce-ordering, .woocommerce .woocommerce-result-count {
 	margin:0;
@@ -133,7 +117,7 @@ p, h2, .woocommerce .col2-set, .woocommerce-page .col2-set {
 	font-size:12px;
 	font-weight:600;
 	padding:1.4em 2em 1.2em;
-	max-width:60%;
+	max-width:100%;
 	color:black;
 }
 .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover , .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce .cart .button:hover, .woocommerce .cart input.button:hover, .woocommerce-message .button:hover, .woocommerce .woocommerce-error .button:hover, .woocommerce .woocommerce-info .button:hover, .woocommerce .woocommerce-message .button:hover {
@@ -171,6 +155,10 @@ p, h2, .woocommerce .col2-set, .woocommerce-page .col2-set {
 }
 .woocommerce form .form-row.woocommerce-invalid .select2-container, .woocommerce form .form-row.woocommerce-invalid input.input-text, .woocommerce form .form-row.woocommerce-invalid select, .woocommerce form .form-row.woocommerce-validated input.input-text, .woocommerce form .form-row.woocommerce-validated select {
 	border:#e55e34 1px solid;
+}
+.woocommerce #payment #place_order:hover {
+	background:#e55e34;
+	border:3px solid #e55e34;
 }
 input[type='radio'] {
   -webkit-appearance:none;
