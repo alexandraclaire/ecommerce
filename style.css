@@ -17,7 +17,6 @@
 	max-width:100%;
 	height:100vh;
 }
-
 /*BASIC LAYOUT*/
 .site-title {
 	font-family:helvetica;
@@ -51,13 +50,22 @@
 	font-size:14px;
 	background:#e55e34;
 	display:flex;
+	flex-direction:column;
 	justify-content:center;
 	flex-wrap:wrap;
 	text-align:center;
 }
 .disclaimer {
-	margin-top:6em;
+	margin-top:4em;
 	font-size:10px;
+}
+ul.social-media-icons {
+	float:none;
+	margin-top:2em;
+}
+ul.social-media-icons li .fa {
+	color:white;
+	font-size:20px;
 }
 /* PAGES */
 .page-title {
@@ -198,6 +206,7 @@ input[type='radio']:before {
 input[type='radio']:checked:before {
   background:white;
 }
+
 /*The code below will simply setup the price-title area to be hidden and have a background. Please note that uou will have to change the background and height to match your website color scheme and product height  but first load it as and then adjust                                                                                      
 */
 	nav.gridlist-toggle {
@@ -226,12 +235,16 @@ ul.products.list li.product div[itemprop="description"], ul.products.grid div[it
   ul.products li.product:hover a img {
 	opacity:0.1;
   }
-
+.woocommerce-account .addresses .title .edit {
+	color:#e55e34;
+	font-family:helvetica;
+	font-size:20px;
+}
 /* Media Queries */
 
 @media screen and (min-width:650px) {
 	#home-hero {
-		padding-top:10em;
+		padding-top:12em;
 	}
 
 }
