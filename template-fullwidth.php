@@ -25,8 +25,7 @@ get_header(); ?>
 	</header><!-- .entry-header -->
  
 <div class="entry-content-wrapper"> 
-	<div class="page-full-contain">
-    	<div class="col-1-1">    
+	<div class="page-full-contain"> 
             <div id="primary" class="content-area shortcodes">
                 <main id="main" class="site-main" role="main">
         
@@ -44,7 +43,6 @@ get_header(); ?>
                 </main><!-- #main -->
             </div><!-- #primary -->
 		</div>
-	</div>
 </div>
 </section>
 <?php get_footer(); ?>

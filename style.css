@@ -23,10 +23,12 @@
 	font-family:helvetica;
 	font-size:60px;
 	color:white;
+	padding-left:15%;
 }
 .site-header {
 	margin-top:1em;
 }
+
 .site-title a:hover {
 	color:grey;
 }
@@ -36,20 +38,28 @@
 #home-hero button:hover {
 	color:white;
 }
-.col-1-1 {
-	margin-top:7em;
-}
-.site-info {
-	background:#fff;
-}
 .site-branding {
 	margin-left:0;
 }
-#colophon {
-	background:white;
+#pagefooter {
+	padding-top:2.5em;
+	width:100vw;
+	margin:0 auto;
+	text-transform:uppercase;
+	color:white;
+	font-weight:600;
+	font-size:14px;
+	background:#e55e34;
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+	text-align:center;
+}
+.disclaimer {
+	margin-top:6em;
+	font-size:10px;
 }
 /* PAGES */
-
 .page-title {
 	text-align:center;
 	padding-top:3em;
@@ -63,6 +73,9 @@ p, h2, .woocommerce .col2-set, .woocommerce-page .col2-set {
 	max-width:1200px;
 	padding-top:1em;
 }
+#secondary {
+	margin-left:2em;
+}
 /*WOO COMMERCE*/
 
 .product {
@@ -71,8 +84,13 @@ p, h2, .woocommerce .col2-set, .woocommerce-page .col2-set {
 	width:90%;
 	max-width:1200px;
 }
-#content ul {
-	margin-top:2em;
+#page {
+	margin:0 auto;
+}
+.woocommerce .products ul, .woocommerce ul.products {
+	margin:0 auto;
+	width:88%;
+	padding-top:2em;
 }
 #content ul li .add_to_cart_button {
 	background:none;
@@ -94,18 +112,13 @@ p, h2, .woocommerce .col2-set, .woocommerce-page .col2-set {
 .woocommerce h3 {
 	padding-top:1em;
 }
-.woocommerce {
-	margin:0 auto;
-	width:88%;
-	max-width:1200px;
-}
 /*BUTTONS and FORMS*/
 #comments {
 	padding-top:1em;
 	border:none;
 }
 .woocommerce .woocommerce-ordering, .woocommerce .woocommerce-result-count {
-	margin:0;
+	margin-left:1em;
 }
 .woocommerce #review_form #respond {
 	padding-top:2em;
@@ -185,12 +198,42 @@ input[type='radio']:before {
 input[type='radio']:checked:before {
   background:white;
 }
+/*The code below will simply setup the price-title area to be hidden and have a background. Please note that uou will have to change the background and height to match your website color scheme and product height  but first load it as and then adjust                                                                                      
+*/
+	nav.gridlist-toggle {
+	display:none;
+}
+ul.products.list li.product div[itemprop="description"], ul.products.grid div[itemprop="description"] {
+    	text-align: left;
+   		display:none;
+  }
+/* Show the that was setup above when the user hovers*/
+   ul.products.grid li.product:hover div[itemprop="description"] {
+		display:block;
+		position: absolute;
+    	background:#e55e34;
+    	top: 0;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	color: white;
+    	max-height:50%;
+    	font-size:16px;
+    	font-weight:600;
+    	z-index:-1;
+    	
+  }
+  ul.products li.product:hover a img {
+	opacity:0.1;
+  }
+
 /* Media Queries */
 
 @media screen and (min-width:650px) {
 	#home-hero {
 		padding-top:10em;
 	}
+
 }
 
 

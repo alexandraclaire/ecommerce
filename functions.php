@@ -15,7 +15,19 @@ function theme_js() {
 	global $wp_script;
 
     wp_enqueue_script( 'main_js', get_stylesheet_directory_uri() . '/js/hovers.js', array('jquery'), '', true );
+    wp_enqueue_style( 'luna-menu', get_template_directory_uri() . '/css/jPushMenu.css' );
 } 
+
 // Adding the wp_enqueue_script to make the js function work
 add_action( 'wp_enqueue_scripts', 'theme_js');
+// Alter produt loop individual products 
 
+add_action( 'new_product_defaults_wrap_open' , 20 ); //opener
+add_action( 'new_product_defaults_wrap_close', 40); //closer
+
+function new_product_defaults_wrap_open() {
+  echo '<div itemprop="description">';
+}
+function new_product_defaults_wrap_close() {
+	echo '</div><!--/.description-->';
+}
